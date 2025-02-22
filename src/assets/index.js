@@ -40,7 +40,7 @@ import rubyrails from './tech/rubyrails.png';
 import C from "./tech/C.jpeg";
 import Cplus from "./tech/Cplus.png";
 import Java from "./tech/java.png";
-import Python from "./tech/Python.jpeg";
+import Python from "./tech/python.jpeg";
 
 
 import coverhunt from './company/coverhunt.png';
