@@ -38,9 +38,8 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? 'text-french' : 'text-eerieBlack'
-              } hover:text-taupe text-[21px] font-medium font-mova 
+              className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
+                } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -52,33 +51,31 @@ const Navbar = () => {
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
-                  toggle ? 'menu-open' : 'menu-close'
-                }`}>
-              <div className="flex justify-end">
+              className={`p-6 bg-flashWhite opacity-[0.98] fixed inset-0 z-20 menu ${toggle ? 'menu-open' : 'menu-close'
+                } flex flex-col items-center justify-center`}
+            >
+              {/* Close Button */}
+              <div className="absolute top-6 right-6">
                 <img
                   src={close}
                   alt="close"
-                  className="w-[22px] h-[22px] object-contain cursor-pointer"
+                  className="w-[24px] h-[24px] cursor-pointer"
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-              <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
+
+              {/* Navigation Links */}
+              <ul className="flex flex-col gap-6 items-center text-center mt-8">
                 {navLinks.map((nav) => (
                   <li
-                    id={nav.id}
                     key={nav.id}
-                    className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
+                      } text-[36px] sm:text-[42px] font-bold font-arenq uppercase tracking-wide cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
-                    }}>
+                    }}
+                  >
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
@@ -88,11 +85,12 @@ const Navbar = () => {
             <img
               src={menu}
               alt="menu"
-              className="w-[34px] h-[34px] object-contain cursor-pointer"
+              className="w-[34px] h-[34px] cursor-pointer"
               onClick={() => setToggle(!toggle)}
             />
           )}
         </div>
+
       </div>
     </nav>
   );

@@ -144,12 +144,12 @@ const technologies = [
 ];
 
 const skills = [
-  { name: "HTML", percentage: 90 },
-  { name: "CSS", percentage: 90 },
-  { name: "JavaScript", percentage: 80 },
-  { name: "React", percentage: 80 },
-  { name: "MongoDB", percentage: 80 },
-  {name:"React Native",percentage:70},
+  { name: "HTML", percentage: 100 },
+  { name: "CSS", percentage: 100 },
+  { name: "JavaScript", percentage: 100 },
+  { name: "React", percentage: 100 },
+  { name: "MongoDB", percentage: 100 },
+  {name:"React Native",percentage:100},
 ];
 
 const programmingLanguages = [
