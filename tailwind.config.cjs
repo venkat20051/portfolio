@@ -15,7 +15,7 @@ export default {
         platinum: '#e6e6e9',
         platinumLight: '#f4f4f5',
         timberWolf: '#d4d4d8',
-        taupe: '#9999a1',
+        taupe: '#7f7f8c',
         silver: '#d6d6d6',
         dim: '#66666e',
         battleGray: '#858585',

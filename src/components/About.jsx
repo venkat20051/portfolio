@@ -36,7 +36,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] justify-text ">
         Passionate about web and app development, constantly exploring new technologies and improving my skills. I enjoy solving complex problems and creating seamless, user-friendly experiences. Whether it's designing interactive web applications or building mobile apps, I am committed to bringing ideas to life through code. I strive to stay ahead of the curve by continuously learning and embracing new challenges in the world of development. My journey involves writing clean, efficient code, working with modern frameworks, and ensuring that every project I undertake is optimized for performance and scalability.
       </motion.p>
 

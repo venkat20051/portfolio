@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { useState,useEffect } from 'react';
 import {
   About,
   Contact,
@@ -8,8 +9,28 @@ import {
   Tech,
   Projects,
 } from './components';
+import Footer from './components/Footer';
 
 const App = () => {
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      // Check if the user is at the bottom
+      if (scrollTop + windowHeight >= documentHeight - 10) {
+        setShowFooter(true);
+      } else {
+        setShowFooter(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <BrowserRouter>
       <div className="relative z-0">
@@ -40,6 +61,7 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
         </div>
+        <Footer isVisible={showFooter} />
       </div>
     </BrowserRouter>
   );

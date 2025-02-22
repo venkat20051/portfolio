@@ -37,6 +37,11 @@ import typescript from './tech/typescript.png';
 import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
+import C from "./tech/C.jpeg";
+import Cplus from "./tech/Cplus.png";
+import Java from "./tech/java.png";
+import Python from "./tech/Python.jpeg";
+
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
@@ -96,4 +101,8 @@ export {
   dcc,
   kelhel,
   microverse,
+  C,
+  Python,
+  Java,
+  Cplus
 };

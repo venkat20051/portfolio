@@ -141,7 +141,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
-              index={index}
+              index={index} 
               {...project}
               active={active}
               handleClick={setActive}

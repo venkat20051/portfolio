@@ -23,6 +23,10 @@ import {
   movie,
   nyeusi,
   space,
+  C,
+  Cplus,
+  Java,
+  Python,
   coverhunt,
   dcc,
   kelhel,
@@ -64,63 +68,110 @@ const services = [
 ];
 
 const technologies = [
+  // {
+  //   name: 'HTML 5',
+  //   icon: html,
+  // },
+  // {
+  //   name: 'CSS 3',
+  //   icon: css,
+  // },
+  // {
+  //   name: 'JavaScript',
+  //   icon: javascript,
+  // },
+  // {
+  //   name: 'TypeScript',
+  //   icon: typescript,
+  // },
+  // {
+  //   name: 'React JS',
+  //   icon: reactjs,
+  // },
+  // {
+  //   name: 'Redux Toolkit',
+  //   icon: redux,
+  // },
+  // {
+  //   name: 'Tailwind CSS',
+  //   icon: tailwind,
+  // },
+  // {
+  //   name: 'Node JS',
+  //   icon: nodejs,
+  // },
+  // {
+  //   name: 'Rails',
+  //   icon: rubyrails,
+  // },
+  // {
+  //   name: 'graphql',
+  //   icon: graphql,
+  // },
+  // {
+  //   name: 'postgresql',
+  //   icon: postgresql,
+  // },
+  // {
+  //   name: 'git',
+  //   icon: git,
+  // },
+  // {
+  //   name: 'figma',
+  //   icon: figma,
+  // },
+  // {
+  //   name: 'docker',
+  //   icon: docker,
+  // },
+
   {
-    name: 'HTML 5',
-    icon: html,
+    name: 'C',
+    icon: C,
   },
   {
-    name: 'CSS 3',
-    icon: css,
+    name: 'C++',
+    icon: Cplus,
   },
   {
-    name: 'JavaScript',
-    icon: javascript,
+    name: 'Python',
+    icon: Python,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+    name: 'Java',
+    icon: Java,
+  }
 ];
+
+const skills = [
+  { name: "HTML", percentage: 90 },
+  { name: "CSS", percentage: 90 },
+  { name: "JavaScript", percentage: 80 },
+  { name: "React", percentage: 80 },
+  { name: "MongoDB", percentage: 80 },
+  {name:"React Native",percentage:70},
+];
+
+const programmingLanguages = [
+  { name: "C", image: "https://www.ingenioempresa.com/wp-content/uploads/2022/09/C-Language.png" },
+  { name: "C++", image: "https://www.freeiconspng.com/uploads/c--logo-icon-0.png" },
+  { name: "Java", image: "https://th.bing.com/th/id/OIP.jzI0f-YL6nO4LwLDGvZHfgHaHa?w=512&h=512&rs=1&pid=ImgDetMain" },
+  { name: "Python", image: "https://th.bing.com/th/id/OIP.asy5P05Rv7-zEkUsMC1ehQAAAA?w=280&h=280&rs=1&pid=ImgDetMain" },
+  { name: "JavaScript", image: "https://thumbs.dreamstime.com/b/javascript-logo-javascript-logo-white-background-vector-format-available-136765881.jpg" },
+];
+
+const certifications = [
+  { title: "IT Pearson Java ", image: "https://images.credly.com/size/680x680/images/2210b6fe-0eda-415a-8aba-6c1400566728/ITS-Badges_Java_1200px.png",
+     description: "A globally recognized certification validating core Java programming skills, object-oriented principles, and application development expertise."
+   },
+  { title: "RedHat System Administration", image: "https://images.credly.com/images/572de0ba-2c59-4816-a59d-b0e1687e45ee/image.png",
+    description: "A certification proving proficiency in Linux system administration, including managing users, configuring networking, and handling security policies."
+   },
+  { title: "CCNA Introduction to Networks", image: "https://images.credly.com/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png",
+    description: "Covers fundamental networking concepts, IP addressing, routing, and switching, providing a strong foundation for network administration."
+   },
+];
+
 
 const experiences = [
   {
@@ -214,8 +265,8 @@ const projects = [
       // },
     ],
     image: math,
-    // repo: 'https://github.com/shaqdeff/Math-Magicians',
-    // demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    repo: 'https://github.com/venkat20051/Databases_Management',
+    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
   // {
   //   id: 'project-4',
@@ -264,4 +315,4 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, projects,skills,programmingLanguages,certifications};
