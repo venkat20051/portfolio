@@ -105,7 +105,7 @@ const Experience = () => {
     ease-in-out"
               onClick={() => {
                 // Create a link to the resume file
-                const resumePath = '/resume/Venkat_Resume (updated).pdf'; // File path in the public folder
+                const resumePath = '/resume/Venkat_Resume.pdf'; // File path in the public folder
                 saveAs(resumePath, 'VenkatResume.pdf'); // Download the file
               }}
               onMouseOver={() => {

@@ -248,7 +248,7 @@ const projects = [
   },
   {
     id: 'project-3',
-    name: 'Data Base Management',
+    name: 'DataBase Managing',
     description: 'A simple Java Application where user can interact with Mysql and view the databases and content in the database',
     tags: [
       {
