@@ -221,7 +221,7 @@ const projects = [
     ],
     image: komikult,
     repo: 'https://github.com/venkat20051/NotifyNation',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    demo: 'https://notify-nation-flame.vercel.app/',
   },
   {
     id: 'project-2',
@@ -244,7 +244,7 @@ const projects = [
     ],
     image: leaderboard,
     repo: 'https://github.com/venkat20051/Sports-Mania',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    demo: 'https://sports-mania-912v.vercel.app/',
   },
   {
     id: 'project-3',
@@ -266,7 +266,8 @@ const projects = [
     ],
     image: math,
     repo: 'https://github.com/venkat20051/Databases_Management',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    demo:'',
+    // demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
   // {
   //   id: 'project-4',
